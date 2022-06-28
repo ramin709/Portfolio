@@ -48,7 +48,7 @@ const SideBar = () => {
       </div>
 
       <div className={style.buttons}>
-        <button className={style.btn}>Email Me</button>
+        <button className={style.btn} onClick = {() => window.open('mailto: rsafdart@gmail.com')}>Email Me</button>
         <button className={style.btn}>Toggle theme</button>
       </div>
     </div>

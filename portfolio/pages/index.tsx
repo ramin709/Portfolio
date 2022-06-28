@@ -1,8 +1,11 @@
 import React from 'react'
+import {servieces} from '../data'
 
 const index = () => {
   return (
-    <div>bye bye for now</div>
+    <div>
+      {servieces.map((service , index) => (<span key={index}>{service.title}</span>))}
+    </div>
   )
 }
 

@@ -1,0 +1,26 @@
+.currentLink {
+    font-weight: bold;
+    border-bottom: 5px solid rgb(45, 185, 143);
+    padding-bottom: 10px;
+    color:rgb(45, 185, 143);
+}
+
+.Links {
+    text-decoration: none;
+    color: #000;
+    margin: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.Links:hover {
+    color:rgb(45, 185, 143);
+    transition: all 0.5s ease;
+}
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
