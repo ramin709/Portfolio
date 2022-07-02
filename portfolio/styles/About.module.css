@@ -1,0 +1,41 @@
+.container {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.description {
+    padding: 0px 40px;
+    text-align: left;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.skillTitle {
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+.skillsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /* background-color: #f5f1f1; */
+}
+
+.cardContainer {
+    width: 45%;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .cardContainer{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+}
