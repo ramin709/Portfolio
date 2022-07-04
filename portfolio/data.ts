@@ -3,6 +3,7 @@ import {FaServer} from 'react-icons/fa'
 import {AiOutlineAntDesign , AiOutlineApi} from 'react-icons/ai'
 import {MdDeveloperMode} from 'react-icons/md'
 import {IServices} from './type'
+import {ISkill} from './type'
 
 
 export const servieces: IServices[] = [
@@ -33,7 +34,61 @@ export const servieces: IServices[] = [
     },
     {
         title: 'Whatever',
-        about: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        about: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text',
         icon: RiComputerLine
     }
+]
+
+export const skills: ISkill[] = [
+    {
+        name: 'HTML',
+        level: '70%'
+    },
+    {
+        name: 'CSS',
+        level: '70%'
+    },
+    {
+        name: 'JavaScript',
+        level: '60%'
+    },
+    {
+        name: 'ReactJS',
+        level: '50%'
+    },
+    {
+        name: 'TypeScript',
+        level: '40%'
+    },
+    {
+        name: 'Bootstrap',
+        level: '60%'
+    },
+    {
+        name: 'ExpressJS',
+        level: '50%'
+    },
+    {
+        name: 'NodeJS',
+        level: '50%'
+    },
+]
+
+export const tools: ISkill[] = [
+    {
+        name: 'Framer',
+        level: '30%'
+    },
+    {
+        name: 'Axios',
+        level: '60%'
+    },
+    {
+        name: 'Figma',
+        level: '50%'
+    },
+    {
+        name: 'Mongo', 
+        level: '30%'
+    },
 ]

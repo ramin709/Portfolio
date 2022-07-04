@@ -1,0 +1,56 @@
+.information {
+    display: flex;
+    align-items: center;
+    padding:  0px 10px;
+    margin: 10px auto;
+}
+
+.experience , .education {
+    width: 40%;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+}
+
+.education h5 , .experience h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.subTitle {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 1rem;
+}
+
+.skills {
+    display: flex;
+    align-items: baseline;
+    margin: 5px auto;
+}
+
+.languagesAndFrameworks , .tools {
+    padding: 0px 15px;
+    width: 40%;
+    text-align: left;
+}
+
+.languagesAndFrameworks h5 , .tools h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.tools {
+    margin-left: 10px;
+}
