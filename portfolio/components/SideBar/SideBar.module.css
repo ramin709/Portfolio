@@ -30,6 +30,10 @@
     padding: 10px;
 }
 
+[data-theme="dark"] .contactInfo {
+    background-color: rgb(53, 53, 53);
+}
+
 .info {
     margin-top: 10px;
 }
@@ -67,6 +71,11 @@
     border-radius: 10px;
 }
 
+[data-theme="dark"] .title , [data-theme="dark"] .resume{
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+}
+
 .resume {
     display: flex;
     align-items: center;
@@ -76,6 +85,10 @@
 .resumeLink {
     text-decoration: none;
     color: #000000;
+}
+
+[data-theme="dark"] .resumeLink {
+    color: #fff;
 }
 
 .icons {

@@ -13,6 +13,10 @@
     font-weight: 500;
 }
 
+[data-theme="dark"] .Links {
+    color: rgb(0, 174, 255);
+}
+
 .Links:hover {
     color:rgb(45, 185, 143);
     transition: all 0.5s ease;

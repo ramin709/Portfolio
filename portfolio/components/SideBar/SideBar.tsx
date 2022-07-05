@@ -4,8 +4,17 @@ import Image from 'next/image'
 import { AiFillLinkedin, AiFillYoutube, AiFillGithub } from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
 import { GiTie } from 'react-icons/gi'
+import { useTheme } from 'next-themes'
 
 const SideBar = () => {
+
+  const {theme , setTheme} = useTheme();
+
+
+  const changeTheme = () => {
+    theme === 'light' ? setTheme('dark') : setTheme('light')
+  }
+
   return (
     <div className={style.container}>
       <div className={style.imgContainer}>
@@ -49,7 +58,7 @@ const SideBar = () => {
 
       <div className={style.buttons}>
         <button className={style.btn} onClick = {() => window.open('mailto: rsafdart@gmail.com')}>Email Me</button>
-        <button className={style.btn}>Toggle theme</button>
+        <button className={style.btn} onClick = {changeTheme}>Toggle theme</button>
       </div>
     </div>
   )

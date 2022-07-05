@@ -4,8 +4,20 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background: linear-gradient(to right, rgb(45, 185, 143) , rgb(0, 174, 255));
   font-family: 'Nunito', sans-serif;
+}
+
+[data-theme = "light"]{
+  background: linear-gradient(to right, rgb(45, 185, 143) , rgb(0, 174, 255));
+}
+
+[data-theme="dark"] body{
+  background: linear-gradient(to bottom, rgb(26, 25, 25) , rgb(43, 42, 42)) !important; 
+  color: white !important;
+}
+
+[data-theme="dark"] .sideBar , [data-theme="dark"] .main{
+  background-color: rgb(43, 42, 42);
 }
 
 * {
@@ -19,12 +31,11 @@ body {
 }
 
 .sideBar , .main {
-  background-color: #fff;
   margin: 3rem auto;
   border-radius: 10px;
   text-align: center;
+  background-color: #fff;
 }
-
 .sideBar {
   width: 20%;
 }
