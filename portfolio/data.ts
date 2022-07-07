@@ -2,7 +2,7 @@ import {RiComputerLine} from 'react-icons/ri'
 import {FaServer} from 'react-icons/fa'
 import {AiOutlineAntDesign , AiOutlineApi} from 'react-icons/ai'
 import {MdDeveloperMode} from 'react-icons/md'
-import {IServices} from './type'
+import {IProject, IServices , Category} from './type'
 import {ISkill} from './type'
 
 
@@ -90,5 +90,89 @@ export const tools: ISkill[] = [
     {
         name: 'Mongo', 
         level: '30%'
+    },
+]
+
+export const projects: IProject[] = [
+    {
+        name: "new project",
+        category: ['react'],
+        deploy_url: "#",
+        github_url: "https://github.com/ramin709?tab=repositories",
+        description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
+        image_src: "/images/1.png",
+        tags: ["ReactJs" , "Material_UI"]
+    },
+    {
+        name: "new project",
+        category: ['react'],
+        deploy_url: "#",
+        github_url: "https://github.com/ramin709?tab=repositories",
+        description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
+        image_src: "/images/2.jpg",
+        tags: ["ReactJs" , "Material_UI"]
+    },
+    {
+        name: "new project",
+        category: ['react'],
+        deploy_url: "#",
+        github_url: "https://github.com/ramin709?tab=repositories",
+        description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
+        image_src: "/images/3.jpg",
+        tags: ["ReactJs" , "Material_UI"]
+    },
+    {
+        name: "new project",
+        category: ['react'],
+        deploy_url: "#",
+        github_url: "https://github.com/ramin709?tab=repositories",
+        description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
+        image_src: "/images/4.jpg",
+        tags: ["ReactJs" , "Material_UI"]
+    },
+    {
+        name: "new project",
+        category: ['react'],
+        deploy_url: "#",
+        github_url: "https://github.com/ramin709?tab=repositories",
+        description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
+        image_src: "/images/5.jpg",
+        tags: ["ReactJs" , "Material_UI"]
+    },
+    {
+        name: "new project",
+        category: ['react'],
+        deploy_url: "#",
+        github_url: "https://github.com/ramin709?tab=repositories",
+        description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
+        image_src: "/images/6.jpg",
+        tags: ["ReactJs" , "Material_UI"]
+    },
+    {
+        name: "new project",
+        category: ['react'],
+        deploy_url: "#",
+        github_url: "https://github.com/ramin709?tab=repositories",
+        description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
+        image_src: "/images/7.png",
+        tags: ["ReactJs" , "Material_UI"]
+    },
+    {
+        name: "new project",
+        category: ['react'],
+        deploy_url: "#",
+        github_url: "https://github.com/ramin709?tab=repositories",
+        description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
+        image_src: "/images/8.png",
+        tags: ["ReactJs" , "Material_UI"]
+    },
+    {
+        name: "new project",
+        category: ['react'],
+        deploy_url: "#",
+        github_url: "https://github.com/ramin709?tab=repositories",
+        description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
+        image_src: "/images/9.jpg",
+        tags: ["ReactJs" , "Material_UI"]
     },
 ]

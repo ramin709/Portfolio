@@ -19,7 +19,7 @@ const index = ({ services }) => {
       <div className={style.skillsContainer}>
         {
           services.map((service: IServices, index: number) => 
-          <div className={style.cardContainer}>
+          <div className={style.cardContainer} key={index}>
             <ServiceCard Icon={Icons[index]} service={service} />
           </div>)
         }
