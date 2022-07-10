@@ -23,27 +23,37 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({ project }) => {
             {
                 show &&
                 <div className={style.card}>
-                    <img src={image_src} alt={name} className={style.imgProjectCard} />
-                    <p className={style.title}>{name}</p>
-                    <p>{description}</p>
-                    <div>
-                        <a href={github_url}>
-                            Github
-                        </a> <AiFillGithub />
+                    <div className={style.cardTop}>
+                        <img src={image_src} alt={name} className={style.imgProjectCard} />
+                        <div className={style.infoSection}>
+                            <p className={style.title}>{name}</p>
+                            <p>{description}</p>
 
-                        <a href={deploy_url}>
-                            Project
-                        </a> <AiFillProject />
+                            <div className={style.tagContainer}>
+                                {
+                                    tags.map(tag => (<div className={style.tag}>{tag}</div>)
+                                    )
+                                }
+                            </div>
+                        </div>
                     </div>
 
-                    <div className={style.tagContainer}>
-                        {
-                            tags.map(tag => (<div>{tag}</div>)
-                                )
-                        }
+                    <div className={style.cardDown}>
+                        <div className={style.button}>
+                            <a href={github_url}>
+                                Github
+                            </a> <AiFillGithub />
+                        </div>
+
+                        <div className={style.button}>
+                            <a href={deploy_url}>
+                                Project
+                            </a> <AiFillProject />
+                        </div>
                     </div>
 
-                    <MdClose onClick={() => setShow(false)} className={style.icon}/>
+
+                    <MdClose onClick={() => setShow(false)} className={style.icon} />
                 </div>
             }
         </>
