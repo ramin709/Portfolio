@@ -4,27 +4,27 @@ import style from './ProjectNavbar.module.css'
 
 export type NavbarItemProps = {
     label: Category | 'all'
-    onClick: Function
+    handler: Function
 }
 
 type ProjectNavbarProps = {
     handler: Function,
 }
 
-const NavbarItem:FunctionComponent<NavbarItemProps> = ({label}) => {
+const NavbarItem:FunctionComponent<NavbarItemProps> = ({label , handler}) => {
   return (
-    <li className={style.item}>{label}</li>
+    <li className={style.item} onClick={() => handler(label)}>{label}</li>
   )
 }
 
-const ProjectNavbar: FunctionComponent<ProjectNavbarProps> = ({handler}) => {
+const ProjectNavbar: FunctionComponent<ProjectNavbarProps> = (props) => {
   return (
     <ul className={style.list}>
-        <NavbarItem label="all" onClick={() => handler('all')}/>
-        <NavbarItem label="react" onClick={() => handler('react')}/>
-        <NavbarItem label="mongo" onClick={() => handler('mongo')}/>
-        <NavbarItem label="next" onClick={() => handler('next')}/>
-        <NavbarItem label="node" onClick={() => handler('node')}/>
+        <NavbarItem label="all" {...props}/>
+        <NavbarItem label="react" {...props}/>
+        <NavbarItem label="mongo" {...props}/>
+        <NavbarItem label="next" {...props}/>
+        <NavbarItem label="node" {...props}/>
     </ul>
   )
 }

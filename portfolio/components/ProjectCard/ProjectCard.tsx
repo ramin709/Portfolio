@@ -2,6 +2,7 @@ import React, { FunctionComponent, useState } from 'react'
 import { AiFillGithub, AiFillProject } from 'react-icons/ai'
 import { MdClose } from 'react-icons/md'
 import { IProject } from '../../type'
+import Image from 'next/image'
 import style from './ProjectCard.module.css'
 
 type ProjectCardProps = {
@@ -16,7 +17,7 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({ project }) => {
     return (
         <>
             <div onClick={() => setShow(true)}>
-                <img src={image_src} alt={name} className={style.imgProject} />
+                <Image src={image_src} alt={name} width="300px" height="200px" className={style.imgProject} loading="lazy"/>
                 <p className={style.title}>{name}</p>
             </div>
 
@@ -24,7 +25,7 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({ project }) => {
                 show &&
                 <div className={style.card}>
                     <div className={style.cardTop}>
-                        <img src={image_src} alt={name} className={style.imgProjectCard} />
+                        <Image src={image_src} width="400px" height="200px" alt={name} className={style.imgProjectCard} loading="lazy" />
                         <div className={style.infoSection}>
                             <p className={style.title}>{name}</p>
                             <p>{description}</p>

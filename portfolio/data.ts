@@ -96,7 +96,7 @@ export const tools: ISkill[] = [
 export const projects: IProject[] = [
     {
         name: "new project",
-        category: ['react'],
+        category: ["react"],
         deploy_url: "#",
         github_url: "https://github.com/ramin709?tab=repositories",
         description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
@@ -132,7 +132,7 @@ export const projects: IProject[] = [
     },
     {
         name: "new project",
-        category: ['react'],
+        category: ["node"],
         deploy_url: "#",
         github_url: "https://github.com/ramin709?tab=repositories",
         description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
@@ -141,7 +141,7 @@ export const projects: IProject[] = [
     },
     {
         name: "new project",
-        category: ['react'],
+        category: ["node"],
         deploy_url: "#",
         github_url: "https://github.com/ramin709?tab=repositories",
         description: "This project represents a hotel site which you can reserve as much room as you want for holiday",

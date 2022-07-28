@@ -18,7 +18,7 @@ const SideBar = () => {
   return (
     <div className={style.container}>
       <div className={style.imgContainer}>
-        <Image src="/avatar.jpg" alt="avatar" width={150} height={150} className={style.image}></Image>
+        <Image src="/avatar.jpg" alt="avatar" width="150px" height="150px" className={style.image}></Image>
       </div>
       <h3 className={style.name}>
         <span className={style.firstName}>John </span>
