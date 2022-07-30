@@ -34,7 +34,7 @@ const Projects = () => {
     <div className={style.projectsContainer}>
         {
           projects.map(project => (
-            <div className={style.projectContainer}>
+            <div className={style.projectContainer} key={project.image_src}>
               <ProjectCard project={project} />
             </div>
           ))

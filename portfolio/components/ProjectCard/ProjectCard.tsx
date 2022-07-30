@@ -32,7 +32,7 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({ project }) => {
 
                             <div className={style.tagContainer}>
                                 {
-                                    tags.map(tag => (<div className={style.tag}>{tag}</div>)
+                                    tags.map(tag => (<div className={style.tag} key={tag}>{tag}</div>)
                                     )
                                 }
                             </div>

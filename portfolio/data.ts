@@ -100,7 +100,7 @@ export const projects: IProject[] = [
         deploy_url: "#",
         github_url: "https://github.com/ramin709?tab=repositories",
         description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
-        image_src: "/images/1.png",
+        image_src: "/images/1.webp",
         tags: ["ReactJs" , "Material_UI"]
     },
     {
@@ -109,7 +109,7 @@ export const projects: IProject[] = [
         deploy_url: "#",
         github_url: "https://github.com/ramin709?tab=repositories",
         description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
-        image_src: "/images/2.jpg",
+        image_src: "/images/2.webp",
         tags: ["ReactJs" , "Material_UI"]
     },
     {
@@ -118,7 +118,7 @@ export const projects: IProject[] = [
         deploy_url: "#",
         github_url: "https://github.com/ramin709?tab=repositories",
         description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
-        image_src: "/images/3.jpg",
+        image_src: "/images/3.webp",
         tags: ["ReactJs" , "Material_UI"]
     },
     {
@@ -127,7 +127,7 @@ export const projects: IProject[] = [
         deploy_url: "#",
         github_url: "https://github.com/ramin709?tab=repositories",
         description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
-        image_src: "/images/4.jpg",
+        image_src: "/images/4.webp",
         tags: ["ReactJs" , "Material_UI"]
     },
     {
@@ -136,7 +136,7 @@ export const projects: IProject[] = [
         deploy_url: "#",
         github_url: "https://github.com/ramin709?tab=repositories",
         description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
-        image_src: "/images/5.jpg",
+        image_src: "/images/5.webp",
         tags: ["ReactJs" , "Material_UI"]
     },
     {
@@ -145,7 +145,7 @@ export const projects: IProject[] = [
         deploy_url: "#",
         github_url: "https://github.com/ramin709?tab=repositories",
         description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
-        image_src: "/images/6.jpg",
+        image_src: "/images/6.webp",
         tags: ["ReactJs" , "Material_UI"]
     },
     {
@@ -154,7 +154,7 @@ export const projects: IProject[] = [
         deploy_url: "#",
         github_url: "https://github.com/ramin709?tab=repositories",
         description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
-        image_src: "/images/7.png",
+        image_src: "/images/7.webp",
         tags: ["ReactJs" , "Material_UI"]
     },
     {
@@ -163,7 +163,7 @@ export const projects: IProject[] = [
         deploy_url: "#",
         github_url: "https://github.com/ramin709?tab=repositories",
         description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
-        image_src: "/images/8.png",
+        image_src: "/images/8.webp",
         tags: ["ReactJs" , "Material_UI"]
     },
     {
@@ -172,7 +172,7 @@ export const projects: IProject[] = [
         deploy_url: "#",
         github_url: "https://github.com/ramin709?tab=repositories",
         description: "This project represents a hotel site which you can reserve as much room as you want for holiday",
-        image_src: "/images/9.jpg",
+        image_src: "/images/9.webp",
         tags: ["ReactJs" , "Material_UI"]
     },
 ]
