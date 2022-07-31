@@ -4,11 +4,39 @@ import ProjectNavbar from '../components/ProjectNavbar/ProjectNavbar'
 import { projects as sampleProjects } from '../data'
 import style from '../styles/Projects.module.css'
 import { Category, IProject } from '../type'
+import {motion} from 'framer-motion'
 
 const Projects = () => {
 
   const [projects, setProjects] = useState<Array<IProject>>(sampleProjects)
   const [active, setActive] = useState<Category | 'all'>('all')
+
+  const outerAnimation = {
+    initial: {
+        
+    },
+
+    animate: {
+      transition: {
+        staggerChildren: 0.2
+      }
+    }
+  }
+
+  const animation = {
+    initial: {
+      y: 100,
+      opacity: 0
+    },
+
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      }
+    }
+  }
 
   console.log(active);
   console.log(projects)
@@ -31,15 +59,15 @@ const Projects = () => {
       <ProjectNavbar handler={handleProject} />
     </nav>
 
-    <div className={style.projectsContainer}>
+    <motion.div className={style.projectsContainer} initial="initial" animate="animate" variants={outerAnimation}>
         {
           projects.map(project => (
-            <div className={style.projectContainer} key={project.image_src}>
+            <motion.div className={style.projectContainer} key={project.image_src} variants={animation}>
               <ProjectCard project={project} />
-            </div>
+            </motion.div>
           ))
         }
-    </div>
+    </motion.div>
 
 
 

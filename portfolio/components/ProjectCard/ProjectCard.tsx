@@ -3,6 +3,7 @@ import { AiFillGithub, AiFillProject } from 'react-icons/ai'
 import { MdClose } from 'react-icons/md'
 import { IProject } from '../../type'
 import Image from 'next/image'
+import {motion} from 'framer-motion'
 import style from './ProjectCard.module.css'
 
 type ProjectCardProps = {
@@ -14,6 +15,33 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({ project }) => {
     const { name, description, github_url, deploy_url, image_src, tags, category } = project;
     const [show, setShow] = useState(false);
 
+    const animation = {
+        initial: {
+          y: 100,
+          opacity: 0
+        },
+    
+        animate: {
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.5,
+          }
+        }
+      }
+
+      const outerAnimation = {
+        initial: {
+            
+        },
+    
+        animate: {
+          transition: {
+            staggerChildren: 0.1
+          }
+        }
+      }
+
     return (
         <>
             <div onClick={() => setShow(true)}>
@@ -23,16 +51,16 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({ project }) => {
 
             {
                 show &&
-                <div className={style.card}>
+                <motion.div className={style.card} initial="initial" animate="animate" variants={outerAnimation}>
                     <div className={style.cardTop}>
                         <Image src={image_src} width="400px" height="200px" alt={name} className={style.imgProjectCard} loading="lazy" />
                         <div className={style.infoSection}>
-                            <p className={style.title}>{name}</p>
-                            <p>{description}</p>
+                            <motion.p className={style.title}  variants={animation}>{name}</motion.p>
+                            <motion.p  variants={animation}>{description}</motion.p>
 
                             <div className={style.tagContainer}>
                                 {
-                                    tags.map(tag => (<div className={style.tag} key={tag}>{tag}</div>)
+                                    tags.map(tag => (<motion.div className={style.tag} key={tag}  variants={animation}>{tag}</motion.div>)
                                     )
                                 }
                             </div>
@@ -40,22 +68,22 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({ project }) => {
                     </div>
 
                     <div className={style.cardDown}>
-                        <div className={style.button}>
+                        <motion.div  variants={animation} className={style.button}>
                             <a href={github_url}>
                                 Github
                             </a> <AiFillGithub />
-                        </div>
+                        </motion.div>
 
-                        <div className={style.button}>
+                        <motion.div  variants={animation} className={style.button}>
                             <a href={deploy_url}>
                                 Project
                             </a> <AiFillProject />
-                        </div>
+                        </motion.div>
                     </div>
 
 
                     <MdClose onClick={() => setShow(false)} className={style.icon} />
-                </div>
+                </motion.div>
             }
         </>
     )

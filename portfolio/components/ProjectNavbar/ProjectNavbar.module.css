@@ -7,6 +7,7 @@
 .item {
     margin-right: 10px;
     transition: all 0.5s ease;
+    text-transform: capitalize;
 }
 
 .item:hover {
