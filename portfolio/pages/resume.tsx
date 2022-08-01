@@ -1,9 +1,8 @@
-import React from 'react'
 import style from '../styles/Resume.module.css'
 import Skill from '../components/Skill/Skill'
-import { ISkill } from '../type'
-import {motion} from 'framer-motion'
-import { skills , tools } from '../data'
+import { motion } from 'framer-motion'
+import { skills, tools } from '../data'
+import Head from 'next/head'
 
 const resume = () => {
 
@@ -24,6 +23,12 @@ const resume = () => {
 
   return (
     <div>
+      <Head>
+        <title>
+          Resume Page
+        </title>
+        <meta name="description" content="This is an example of a meta description. This will often show up in search results."/>
+      </Head>
       <div className={style.information}>
         <motion.div className={style.education} initial="initial" animate="animate" variants={animation} >
           <h5>Education</h5>

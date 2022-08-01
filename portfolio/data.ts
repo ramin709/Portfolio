@@ -94,7 +94,7 @@ export const tools: ISkill[] = [
 ]
 
 export const projects: IProject[] = [
-    {
+    {   id: 1,
         name: "new project",
         category: ["react"],
         deploy_url: "#",
@@ -103,7 +103,7 @@ export const projects: IProject[] = [
         image_src: "/images/1.webp",
         tags: ["ReactJs" , "Material_UI"]
     },
-    {
+    {   id: 2,
         name: "new project",
         category: ['react'],
         deploy_url: "#",
@@ -112,7 +112,7 @@ export const projects: IProject[] = [
         image_src: "/images/2.webp",
         tags: ["ReactJs" , "Material_UI"]
     },
-    {
+    {   id: 3,
         name: "new project",
         category: ['react'],
         deploy_url: "#",
@@ -121,7 +121,7 @@ export const projects: IProject[] = [
         image_src: "/images/3.webp",
         tags: ["ReactJs" , "Material_UI"]
     },
-    {
+    {   id: 4,
         name: "new project",
         category: ['react'],
         deploy_url: "#",
@@ -130,7 +130,7 @@ export const projects: IProject[] = [
         image_src: "/images/4.webp",
         tags: ["ReactJs" , "Material_UI"]
     },
-    {
+    {   id: 5,
         name: "new project",
         category: ["node"],
         deploy_url: "#",
@@ -139,7 +139,7 @@ export const projects: IProject[] = [
         image_src: "/images/5.webp",
         tags: ["ReactJs" , "Material_UI"]
     },
-    {
+    {   id: 6,
         name: "new project",
         category: ["node"],
         deploy_url: "#",
@@ -148,7 +148,7 @@ export const projects: IProject[] = [
         image_src: "/images/6.webp",
         tags: ["ReactJs" , "Material_UI"]
     },
-    {
+    {   id: 7,
         name: "new project",
         category: ['react'],
         deploy_url: "#",
@@ -157,7 +157,7 @@ export const projects: IProject[] = [
         image_src: "/images/7.webp",
         tags: ["ReactJs" , "Material_UI"]
     },
-    {
+    {   id: 8,
         name: "new project",
         category: ['react'],
         deploy_url: "#",
@@ -166,7 +166,7 @@ export const projects: IProject[] = [
         image_src: "/images/8.webp",
         tags: ["ReactJs" , "Material_UI"]
     },
-    {
+    {   id: 9,
         name: "new project",
         category: ['react'],
         deploy_url: "#",

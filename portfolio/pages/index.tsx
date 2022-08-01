@@ -1,5 +1,4 @@
 import { GetStaticPropsContext } from 'next'
-import React from 'react'
 import ServiceCard from '../components/ServiceCard/ServiceCard'
 import { IServices } from '../type'
 import { RiComputerLine } from 'react-icons/ri'
@@ -7,6 +6,7 @@ import { FaServer } from 'react-icons/fa'
 import { AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai'
 import { MdDeveloperMode } from 'react-icons/md'
 import { motion } from 'framer-motion'
+import Head from 'next/head'
 import style from '../styles/About.module.css'
 
 const index = ({ services }) => {
@@ -41,6 +41,13 @@ const index = ({ services }) => {
 
   return (
     <div className={style.container}>
+      <Head>
+        <title>
+          About Page
+        </title>
+
+        <meta name="description" content="This is an example of a meta description. This will often show up in search results."/>
+      </Head>
       <p className={style.description}>I am pursing B.Tech Degree(Final year) in computer science engineering from the University of Washington.
         I have +3 years of experience in web development and I have many certificates about the computer and web programming.
       </p>
@@ -59,7 +66,8 @@ const index = ({ services }) => {
 
 export default index
 
-export const getStaticProps = async (context: GetStaticPropsContext) => {
+export async function getServerSideProps({context}) {
+ 
   const res = await fetch('http://localhost:3000/api/services');
   const data = await res.json();
 

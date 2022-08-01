@@ -14,6 +14,7 @@ export interface ISkill {
 export type Category = "react" | "node" | "mongo" | "express" | "next"
 
 export interface IProject {
+    id: number,
     name: string,
     deploy_url: string,
     github_url: string,

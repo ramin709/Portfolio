@@ -1,4 +1,3 @@
-import React from 'react'
 import style from './SideBar.module.css'
 import Image from 'next/image'
 import { AiFillLinkedin, AiFillYoutube, AiFillGithub } from 'react-icons/ai'
@@ -18,7 +17,7 @@ const SideBar = () => {
   return (
     <div className={style.container}>
       <div className={style.imgContainer}>
-        <Image src="/avatar.webp" alt="avatar" width="150px" height="150px" className={style.image}></Image>
+        <Image src="/avatar.webp" alt="avatar" width="200px" height="200px" layout="fixed" className={style.image} ></Image>
       </div>
       <h3 className={style.name}>
         <span className={style.firstName}>John </span>
@@ -30,19 +29,19 @@ const SideBar = () => {
 
       <div className={style.resume}>
         <GiTie className={style.icons} />
-        <a href="" className={style.resumeLink}>Download Resume</a>
+        <a href="/empty.pdf" download="empty.pdf" className={style.resumeLink}>Download Resume</a>
       </div>
 
       <div className={style.socialMediaLinks}>
-        <a href="">
+        <a href="#" aria-label="github">
           <AiFillGithub className={style.socialMediaIcons} />
         </a>
 
-        <a href="">
+        <a href="#" aria-label="linkedIn">
           <AiFillLinkedin className={style.socialMediaIcons} />
         </a>
 
-        <a href="">
+        <a href="#" aria-label="youtube">
           <AiFillYoutube className={style.socialMediaIcons} />
         </a>
       </div>
